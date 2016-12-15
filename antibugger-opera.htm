@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><!-- saved from url=(0083)file://C:\WINDOWS\Temporary%20Internet%20Files\Content.IE5\9P7ZE5UG\testjav1[1].htm --><!-- saved from url=(0123)file://C:\Documents%20and%20Settings\KSH\Local%20Settings\Temporary%20Internet%20Files\Content.IE5\XIXQFEB3\testjava[1].htm --><!-- saved from url=(0035)http://213.167.112.142/testjava.htm -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 10">
+<meta name="Originator" content="Microsoft Word 10">
+<link rel="File-List" href="file:///tmp/antibugger-filer/filelist.xml">
+<link rel="Edit-Time-Data" href="file:///tmp/antibugger-filer/editdata.mso"><!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><title>antibugger javascript</title><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Kjersti</o:Author>
+  <o:LastAuthor>Kjersti</o:LastAuthor>
+  <o:Revision>104</o:Revision>
+  <o:TotalTime>2004</o:TotalTime>
+  <o:Created>2007-02-16T15:11:00Z</o:Created>
+  <o:LastSaved>2007-02-18T15:52:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>36</o:Words>
+  <o:Characters>211</o:Characters>
+  <o:Company>Rogaland Fylkeskommune</o:Company>
+  <o:Lines>1</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>246</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+
+
+
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Vanlig tabell";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+table.MsoTableGrid
+	{mso-style-name:Tabellrutenett;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+
+<script language="JavaScript">
+
+function hentstring()
+                       {
+
+pwdata = document.encrypt.passord.value;
+tekstdata = document.encrypt.teksten.value;
+                      
+                       }
+function utskrift(knut)
+                       { 
+                       
+                       
+                                                                   
+                       window.alert(knut);
+                       
+                       var my = window.open("", "vindu", 'width=400, height=100');
+
+                       my.document.write(knut);
+                                                               
+                //       my.document.write('<input value="Decrypt-2" onclick="dekrypter();" method="get" type="submit">');                                
+                        
+                      
+                       
+                       
+                       }
+function krypter()
+{
+
+var ove = '';
+var msg = ("Masker");
+window.alert(msg);
+hentstring();
+
+for (var h=tekstdata.length -1 ;h > -1;h --)                  {
+for (var i=pwdata.length -1;i > -1;i --)              {
+          
+                  //konverterer til ascii
+                 
+
+
+karakter = pwdata.substr(i,1);               
+
+passkaracii = karakter.charCodeAt(0);
+
+
+  if ((i > -1) && (h > -1))             {
+ 
+   karakter2 = tekstdata.substr(h,1);                
+                  
+   tekstkaracii = karakter2.charCodeAt(0);
+   
+              
+ 
+  xored = tekstkaracii ^ passkaracii;
+   if (xored < 10) {document.write("0");ove = ove + "00";document.write("0")}
+  
+  if ((xored < 100) && (xored > 9))        {ove = ove + "0";document.write("0") } 
+  document.write(xored);
+  ove = ove + xored;
+   
+ 
+    
+                                         } 
+                                         if (i > -1){h --}
+                                         if (i == 0){h++}
+           
+                                                         }
+
+
+                                                               }
+
+
+               
+   utskrift(ove);
+}
+
+                         
+function dekrypter()
+{
+
+  var msg = ("Dekoding");
+  window.alert(msg);
+  hentstring();
+
+  for (var h=tekstdata.length -1;h > -1;h --) {
+  karakter2 = tekstdata.substring(h,h+1);
+  nystreng +=  karakter2;                     }
+   
+  tekstdata = nystreng;
+     
+          
+  var h=tekstdata.length ;
+    while (h > 2) 
+      {
+       var i=pwdata.length -1 ;
+         while ((i > -1) && (h > 2))
+           {
+          
+                  //konverterer til ascii
+
+
+             karakter = pwdata.substring(i,i+1);               
+
+             passkaracii = karakter.charCodeAt(0);
+
+
+
+
+             if ((i > -1) && (h > 2))
+              {
+  
+            
+               sum = '';                
+   
+               
+                for (var j= 0;j < 3 ; j ++) {
+                     samlestreng = tekstdata.substring(h-j-1,h-j);
+                                sum += samlestreng;
+                                             }
+                                  
+                h = h -3;                                
+                
+                
+                            
+                                          
+   
+                }
+   
+               
+ 
+  
+              valuekar = sum ^ passkaracii ;
+              
+   
+              kar = String.fromCharCode(valuekar);
+                 i = i -1;
+  
+               nykar += kar;
+             
+       
+                                                 
+                 
+                   
+                                                 
+            
+                              
+            }      
+                                                                
+      }
+                          
+  for (var ii = nykar.length -1;ii > -1; ii --) {
+  kar = nykar.substring(ii,ii + 1);
+       ny2kar += kar;                            }
+                                                       
+
+                                                
+          
+          utskrift(ny2kar);                                                                        
+
+ 
+
+                               
+                                                                 
+}
+var tallbyte = 0;
+var tallascii = '';
+var tall = 0;
+var sum = '';
+var samlestreng = '';
+var nykar = '';
+var valuekar = 0;
+var tekstkarverdi = 0;
+var tekstkarverdi2 = 0;
+var karakter = '';
+var karakter2 = '';
+var passord = '';
+var passkaracii = 0;
+var teksten = '';
+var tekstkaracii = 0;
+var pwdata ='';
+var tekstdata ='';
+var tekstkaracii = 0;
+var talla = '65';
+var tallb = '36';
+var xored = 0;
+var xored2 = 0;
+var kar = '';
+var kar2 = '';
+var tall = 0;
+var kodeacii = '';
+var nystreng ='';
+var sumxored = 0;
+var nyxored = 0;
+var ny2kar = '';
+</script><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]--></head>
+
+
+
+
+<body style="" lang="EN-US">
+
+<div class="Section1">
+
+<table class="MsoTableGrid" style="width: 100%; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="100%">
+ <tbody><tr style="">
+  <td style="padding: 0cm 5.4pt; width: 34.16%;" valign="top" width="34%">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style="padding: 0cm 5.4pt; width: 65.84%;" valign="top" width="65%">
+  <p class="MsoNormal"><b style=""><i style=""><span style="font-size: 24pt; color: blue;">Antibugger-opera
+  v 2.0 javascript<o:p></o:p></span></i></b></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<form method="get" enctype="application/x-www-form-urlencoded" name="encrypt">
+
+<p style="text-align: center;" align="center"><span style="" lang="NO-BOK">Password<input size="65" name="passord" type="text"><o:p></o:p></span></p>
+
+<p style="text-align: center;" align="center"><span style="" lang="NO-BOK">Text<textarea rows="7" cols="65" name="teksten"></textarea><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="" lang="NO-BOK">&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="" lang="NO-BOK"><input value="Masker" onclick="krypter();" method="get" type="submit"><input value="Dekode" onclick="dekrypter();" method="get" type="submit"><o:p></o:p></span></p>
+
+</form>
+
+<p class="MsoNormal"><span style="display: none;" lang="NO-BOK">
+ 
+</span></p><p></p><p></p><o:p>&nbsp;</o:p><p></p>
+
+
+</div>
+<script> utskrift();
+</script>
+</body></html>
